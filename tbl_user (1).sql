@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-03-2017 a las 04:59:53
+-- Tiempo de generación: 13-03-2017 a las 21:42:26
 -- Versión del servidor: 5.7.14
 -- Versión de PHP: 5.6.25
 
@@ -40,9 +40,9 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id`, `product`, `quantity`, `cost_of_entry`, `cost_of_sale`, `cant_min_stock`) VALUES
-(1, 'DVD', 1, '10.000,00', '10.000,00', 1),
-(2, 'CD', 2, '11.000,00', '11.000,00', 2),
-(3, 'SERIE', 3, '12.000,00', '12.000,00', 3);
+(1, 'CD', 200, '500', '1.250,00', 50),
+(2, 'Sobres de celofán', 300, '49', '49', 50),
+(3, 'DVD', 300, '500', '1.250,00', 50);
 
 --
 -- Índices para tablas volcadas
@@ -62,7 +62,7 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT de la tabla `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

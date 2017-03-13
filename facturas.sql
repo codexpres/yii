@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-03-2017 a las 05:00:03
+-- Tiempo de generación: 13-03-2017 a las 21:42:15
 -- Versión del servidor: 5.7.14
 -- Versión de PHP: 5.6.25
 
@@ -40,7 +40,8 @@ CREATE TABLE `facturas` (
 --
 
 INSERT INTO `facturas` (`id`, `date`, `provider`, `product`, `quantity`, `cost`) VALUES
-(1, '2017-03-06', 'Your provider here', 'Your product here', 1, '10.000,00');
+(1, '2017-03-06', 'Your provider here', 'Your product here', 1, '10.000,00'),
+(2, '2017-03-03', 'Universo Del CD DVD', 'Sobres de celofán', 300, '49');
 
 --
 -- Índices para tablas volcadas
@@ -52,6 +53,15 @@ INSERT INTO `facturas` (`id`, `date`, `provider`, `product`, `quantity`, `cost`)
 ALTER TABLE `facturas`
   ADD PRIMARY KEY (`id`);
 
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `facturas`
+--
+ALTER TABLE `facturas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

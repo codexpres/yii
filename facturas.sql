@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-03-2017 a las 21:42:15
+-- Tiempo de generación: 17-03-2017 a las 03:17:33
 -- Versión del servidor: 5.7.14
 -- Versión de PHP: 5.6.25
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `facturas` (
   `id` int(11) NOT NULL,
   `date` date NOT NULL,
-  `provider` text NOT NULL,
+  `provider` varchar(128) NOT NULL,
   `product` text NOT NULL,
   `quantity` int(128) NOT NULL,
   `cost` text NOT NULL
@@ -61,7 +61,7 @@ ALTER TABLE `facturas`
 -- AUTO_INCREMENT de la tabla `facturas`
 --
 ALTER TABLE `facturas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

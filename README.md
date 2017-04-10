@@ -1,3 +1,4 @@
 # yii
 Archivos de ejemplo de una app utilizando Yiiframework
-https://www.codecademy.com/es
+
+http://www.cdcaracas.tk/yii/facilito/site/index.html

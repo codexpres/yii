@@ -46,7 +46,7 @@ INSERT INTO `users` (`id_user`, `username`, `password`, `email`, `codigo_verific
 (4, 'Miriam', 'pass4', 'miriam.law1@gmail.com', '1272914e0da0b4a95e154b0ee895e0168ea85d11', 1),
 (5, 'Lawrence', 'pass5', 'lawrence@gmail.com', 'a247779fcaa562cb742bcd18ffd6eb15491f7681', 1),
 (6, 'admin', 'admin123', 'admin123@admin.com', 'a629dd5691c13e64c21cd679e97eb2db25ef724b', 1),
-(7, 'demo', 'demo', 'demo@demo.com', '93a9df9ba2a004de3e687589c203066397b49238', 1);
+(7, 'demo', 'demo123', 'demo@demo.com', '93a9df9ba2a004de3e687589c203066397b49238', 1);
 
 --
 -- Índices para tablas volcadas

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-06-2017 a las 21:29:59
+-- Tiempo de generación: 09-06-2017 a las 21:30:06
 -- Versión del servidor: 5.7.14
 -- Versión de PHP: 5.6.25
 
@@ -23,37 +23,35 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `facturas`
+-- Estructura de tabla para la tabla `tbl_user`
 --
 
-CREATE TABLE `facturas` (
+CREATE TABLE `tbl_user` (
   `id` int(11) NOT NULL,
-  `provider` varchar(128) NOT NULL,
   `product` text NOT NULL,
-  `quantity` int(128) NOT NULL,
-  `date` date NOT NULL,
-  `cost` text NOT NULL,
-  `paid_in` text NOT NULL,
-  `paid_on` date NOT NULL,
-  `proof_or_deposit` varchar(128) NOT NULL
+  `quantity` int(11) NOT NULL,
+  `cost_of_entry` text NOT NULL,
+  `cost_of_sale` text NOT NULL,
+  `cant_min_stock` int(128) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `facturas`
+-- Volcado de datos para la tabla `tbl_user`
 --
 
-INSERT INTO `facturas` (`id`, `provider`, `product`, `quantity`, `date`, `cost`, `paid_in`, `paid_on`, `proof_or_deposit`) VALUES
-(1, 'Your provider here', 'Your product here', 1, '2017-03-06', '10.000,00', 'Efectivo / Transferencia / Cheque', '2017-06-08', 'N XXX-XXX-XX'),
-(2, 'Universo Del CD DVD', 'Sobres de celofán', 300, '2017-03-03', '49', 'Efectivo', '2017-06-08', 'NO APLICA');
+INSERT INTO `tbl_user` (`id`, `product`, `quantity`, `cost_of_entry`, `cost_of_sale`, `cant_min_stock`) VALUES
+(1, 'CD', 200, '500', '1.250,00', 50),
+(2, 'Sobres de celofán', 300, '49', '49', 50),
+(3, 'DVD', 300, '500', '1.250,00', 50);
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `facturas`
+-- Indices de la tabla `tbl_user`
 --
-ALTER TABLE `facturas`
+ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -61,10 +59,10 @@ ALTER TABLE `facturas`
 --
 
 --
--- AUTO_INCREMENT de la tabla `facturas`
+-- AUTO_INCREMENT de la tabla `tbl_user`
 --
-ALTER TABLE `facturas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+ALTER TABLE `tbl_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

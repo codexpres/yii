@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-06-2017 a las 21:24:04
+-- Tiempo de generación: 12-06-2017 a las 21:23:34
 -- Versión del servidor: 5.7.14
 -- Versión de PHP: 5.6.25
 
@@ -23,46 +23,38 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_user`
+-- Estructura de tabla para la tabla `maestros`
 --
 
-CREATE TABLE `tbl_user` (
-  `id` int(11) NOT NULL,
-  `product` text NOT NULL,
-  `quantity` int(11) NOT NULL,
-  `cost_of_entry` varchar(128) NOT NULL,
-  `cost_of_sale` varchar(128) NOT NULL,
-  `cant_min_stock` int(128) NOT NULL
+CREATE TABLE `maestros` (
+  `ID` int(11) NOT NULL,
+  `clientes` text NOT NULL,
+  `proveedores` text NOT NULL,
+  `series` varchar(128) NOT NULL,
+  `músicas` varchar(128) NOT NULL,
+  `vídeos` varchar(128) NOT NULL,
+  `inventario` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `tbl_user`
---
-
-INSERT INTO `tbl_user` (`id`, `product`, `quantity`, `cost_of_entry`, `cost_of_sale`, `cant_min_stock`) VALUES
-(1, 'CD', 200, '500', '1.250,00', 50),
-(2, 'Sobres de celofán', 300, '49', '49', 50),
-(3, 'DVD', 300, '500', '1.250,00', 50);
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `tbl_user`
+-- Indices de la tabla `maestros`
 --
-ALTER TABLE `tbl_user`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `maestros`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `tbl_user`
+-- AUTO_INCREMENT de la tabla `maestros`
 --
-ALTER TABLE `tbl_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+ALTER TABLE `maestros`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
